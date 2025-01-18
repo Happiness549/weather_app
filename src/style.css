@@ -3,6 +3,9 @@ body{
     a {
         color: aqua;
     }
+    main{
+        padding: 30px 0; 
+    }
 }
 .weather{
     background-color: white;
@@ -33,9 +36,7 @@ header{
     border-radius: 6px;
     color: white;
 }
-main{
-    padding: 30px 0; 
-}
+
 .weather-app-data{
     display: flex;
     justify-content: space-between;
@@ -50,7 +51,7 @@ line-height: 48px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    color: rgba(30, 33, 66, 0.4)
+   color: rgba(30, 33, 66, 0.4)
     }
 
     .weather-app-temperature-container{
@@ -64,7 +65,7 @@ line-height: 48px;
     font-size: 44px;
     margin-top: 22px;
 }
-weather-temperature{
+.weather-temperature{
     font-size: 88px;
     margin-left: 10px;
     font-weight: bold;
