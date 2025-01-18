@@ -9,21 +9,26 @@
 <body>
     <div class="weather">
     <header>
-        <form>
-<input type="Search" placeholder="Enter a city.." required/>
-<input type="Submit" value="Search" />
+        <form class="Search">
+<input type="Search" placeholder="Enter a city.." required class="Search-form"/>
+<input type="Submit" value="Search" class="Submit-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-    <h1> Paris</h1>
-    <p>
+    <h1 weather-app-city> Paris</h1>
+    <p class="weather-app-details">
         Tuesday 14:49 Scattered clouds 
         <br/>
-        Humidity: 66%  Wind: 3.1km/h
+        Humidity:<strong> 66% </strong> Wind:<strong> 3.1km/h</strong>
     </p>
         </div>
-        <div> ⛅12&deg;</div>
+        <div class="weather-app-temperature-container"> 
+            <div class="weather-app-icon" >⛅</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">&#8451;</div></div>
+        </div>
     </main>
     <footer>Coded by <a href="https://github.com/Happiness549" targer="_blank">Happiness Mhlongo</a>
         code hosted on <a href="https://github.com/Happiness549/weather_app" target="_blank">GitHub</a>
