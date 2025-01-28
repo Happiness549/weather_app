@@ -59,8 +59,15 @@ let cityElemntForm = document.querySelector("#weather-app-city");
 searchCity(searchInput.value);
 }
 
-function displayForecast() {
-   
+function getForecast(city){
+let apiKey = "a3a1343146b16e73bot14905caf06faa";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+axios(apiUrl).then(displayForecast);
+}
+
+
+function displayForecast(response) {
+   console.log(response.data);
     
    let days = ["Tues", "Wed", "Thur", "Fri", "Sat"];
     forecastHtml = "";
@@ -90,5 +97,6 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Durban");
-displayForecast();
+getForecast("Durban");
+
 
